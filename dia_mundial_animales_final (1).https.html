@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Día Mundial de los Animales</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ff9800, #ffc107, #2196f3, #9c27b0);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: white;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 2.2em;
+      margin: 0;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      animation: fadeIn 2s ease;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin-top: 10px;
+      font-weight: 300;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      overflow: hidden;
+      max-width: 350px;
+      width: 100%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card-content h3 {
+      margin: 10px 0;
+      font-size: 1.4em;
+    }
+
+    .card-content p {
+      font-size: 1em;
+      line-height: 1.4;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    @media (min-width: 768px) {
+      .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .card {
+        max-width: 280px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌍 Día Mundial de los Animales</h1>
+    <p>4 de octubre - Trabajo sobre la vida de los seres vivos - A ver si les gusta</p>
+  </header>
+
+  <section class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1560807707-8cc77767d783" alt="Perro feliz">
+      <div class="card-content">
+        <h3>🐶 Respeto</h3>
+        <p>Cuidar de los animales refleja quiénes somos como sociedad.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6" alt="Gato tranquilo">
+      <div class="card-content">
+        <h3>🐱 Protección</h3>
+        <p>Todos los seres vivos merecen un ambiente seguro y digno.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d" alt="León majestuoso">
+      <div class="card-content">
+        <h3>🦁 Conciencia</h3>
+        <p>El futuro del planeta depende también del cuidado de su fauna.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23" alt="Tortuga marina">
+      <div class="card-content">
+        <h3>🐢 Vida</h3>
+        <p>Respetar la biodiversidad es respetar nuestra propia existencia.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    🌱 Haz la diferencia: cuida, protege y respeta a los animales.  
+  </footer>
+</body>
+</html>
